@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OkotokiWebgl</title>
+
+    <style>
+      html,
+      head,
+      body {
+        margin: 0;
+        padding: 25px;
+        background-color: #2a2a2a;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #canvas {
+        margin: 0 auto;
+        background-color: #000;
+      }
+      .fps {
+        color: #ffffff;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fps">fps: <span id="fps"></span></div>
+    <canvas id="canvas" width="700px" height="700px">
+      HTML5 canvas not supported in your browser! These demos will not work.
+    </canvas>
+    <script type="module" src="./util.js"></script>
+    <script type="module" src="./fontInfo.js"></script>
+    <script type="module" src="./scripts.js"></script>
+  </body>
+</html>
